@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish&family=Public+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Mulish&family=Public+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <title>Vite App</title>
@@ -38,7 +38,32 @@
           <button class="button" type="button">Schedule a Demo</button>
         </div>
       </header>
-      <main></main>
+      <main>
+        <section class="intro">
+          <div class="intro__col">
+            <div>
+              <h1 class="heading-h1-large">
+                Start building with our APIs for absolutely free.
+              </h1>
+              <form class="form" action="POST">
+                <label for="">Email</label>
+                <input type="text" placeholder="Enter email address" />
+                <button class="button">Schedule a Demo</button>
+              </form>
+              <p>Have any questions? <a href="#">Contact Us</a></p>
+            </div>
+          </div>
+          <div class="intro__col">
+            <div class="intro__image">
+              <img
+                src="./src/assets/home/desktop/illustration-phone-mockup.svg"
+                alt="Phone"
+              />
+            </div>
+          </div>
+          <div class="wrapper"></div>
+        </section>
+      </main>
     </div>
 
     <script type="module" src="./src/js/main.js"></script>

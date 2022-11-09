@@ -1,5 +1,6 @@
 // 1. Configuration and helpers
 @import './abstracts/variables';
+@import './abstracts/mixins';
 
 // 2. Vendors
 @import './vendors/normalize';
@@ -16,6 +17,7 @@
 @import './components/button';
 @import './components/menu';
 @import './components/menu-toggler';
+@import './components/form';
 
 // 6. Page-specific styles
 @import './pages/home';

@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+
+  position: relative;
+
+  max-width: 445px;
+
+  label {
+    display: none;
+  }
+
+  input {
+    width: 100%;
+    padding: 15px 27px;
+    padding-right: 180px;
+
+    background: $primary-color-white;
+    box-shadow: 10px 10px 25px -10px rgba($secondary-color-dark-blue, 0.25);
+    border-radius: 24px;
+
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: $secondary-color-dark-blue;
+
+    &::placeholder {
+      color: rgba($secondary-color-dark-blue, 0.5);
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  @include for-tablet {
+    margin: auto;
+  }
+
+  @include for-mobile {
+    flex-direction: column;
+
+    input {
+      padding: 15px 27px;
+      margin-bottom: 24px;
+    }
+
+    button {
+      position: static;
+      top: 0;
+
+      transform: translate(0);
+    }
+  }
+}
