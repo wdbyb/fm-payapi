@@ -1,4 +1,6 @@
 body {
+  padding-bottom: 500px;
+
   background-color: $bg-primary-color;
   color: $secondary-color-dark-blue;
 }
@@ -205,6 +207,10 @@ body {
 
   @include for-mobile {
     padding: 0 24px;
+
+    &__info {
+      width: 100%;
+    }
   }
 }
 
@@ -212,7 +218,6 @@ body {
   max-width: 1190px;
   padding: 75px 40px;
   margin: auto;
-  margin-bottom: 500px;
 
   &__list {
     display: grid;
