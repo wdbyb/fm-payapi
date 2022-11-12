@@ -1,0 +1,30 @@
+.footer {
+  position: relative;
+
+  background: $secondary-color-darker-blue;
+
+  color: $primary-color-white;
+
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    max-width: 1190px;
+    padding: 40px;
+    margin: auto;
+  }
+
+  @include for-mobile {
+    padding: 40px 24px;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    .logo {
+      margin-bottom: 40px;
+    }
+  }
+}
