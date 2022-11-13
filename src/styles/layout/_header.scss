@@ -4,16 +4,9 @@
   display: flex;
   align-items: center;
 
-  max-width: 1190px;
-  padding: 40px;
   padding-bottom: 0;
-  margin: auto;
 
   color: $secondary-color-dark-blue;
 
   overflow: hidden;
-
-  @media (max-width: 768px) {
-    padding: 40px 24px;
-  }
 }
