@@ -1,9 +1,24 @@
 .container {
+  width: 100%;
   max-width: 1190px;
   padding: 40px;
   margin: auto;
 
+  &--pricing-title {
+    padding: 82px 40px 72px;
+  }
+
+  @include for-tablet {
+    &--pricing-title {
+      padding: 75px 40px 70px;
+    }
+  }
+
   @include for-mobile {
     padding: 40px 24px;
+
+    &--pricing-title {
+      padding: 48px 24px;
+    }
   }
 }

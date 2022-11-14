@@ -1,0 +1,60 @@
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 350px;
+
+  &__desc {
+    margin: 16px 0 8px;
+
+    color: $secondary-color-light-blue;
+  }
+
+  &__features {
+    padding: 24px 0;
+    margin: 24px 0;
+
+    text-align: start;
+
+    border-top: 1px solid rgba($secondary-color-dark-blue, 0.25);
+    border-bottom: 1px solid rgba($secondary-color-dark-blue, 0.25);
+
+    @include for-tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__feature {
+    position: relative;
+
+    width: 100%;
+    max-width: 150px;
+    padding-left: 36px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 12px;
+      height: 8px;
+
+      background-image: url(./../assets/pricing/desktop/icon-check.svg);
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+
+      transform: translateY(-50%);
+    }
+
+    &--disabled {
+      opacity: 0.5;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 .footer {
   position: relative;
 
+  flex-shrink: 0;
+
   background: $secondary-color-darker-blue;
 
   color: $primary-color-white;

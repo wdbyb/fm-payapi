@@ -5,16 +5,8 @@ body {
   line-height: 28px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $heading-fm;
-}
-
 .heading-h1-large {
+  font-family: $heading-fm;
   font-size: 72px;
   line-height: 72px;
 
@@ -29,13 +21,42 @@ h6 {
   }
 }
 
+.heading-h1-small {
+  font-family: $heading-fm;
+  font-size: 56px;
+  line-height: 56px;
+
+  @include for-tablet {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  @include for-mobile {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
 .heading-h2 {
+  font-family: $heading-fm;
   font-size: 48px;
   line-height: 56px;
 
   @include for-mobile {
     font-size: 32px;
     line-height: 36px;
+  }
+}
+
+.heading-h3-big {
+  font-family: $heading-fm;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+
+  @include for-tablet {
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 

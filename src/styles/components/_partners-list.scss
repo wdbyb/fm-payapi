@@ -1,0 +1,20 @@
+.partners-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 12%;
+  flex-shrink: 3;
+
+  width: 100%;
+  max-width: 536px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: min-content;
+  }
+
+  @include for-mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

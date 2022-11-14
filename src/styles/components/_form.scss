@@ -5,13 +5,11 @@
 
   max-width: 445px;
 
-  text-align: start;
-
-  label {
+  &__label {
     display: none;
   }
 
-  input {
+  &__input {
     width: 100%;
     padding: 15px 27px;
     padding-right: 180px;
@@ -30,26 +28,31 @@
     }
   }
 
-  button {
+  &__btn {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
   }
 
+  &__link {
+    font-weight: 700;
+  }
+
   @include for-tablet {
     margin: auto;
+    text-align: start;
   }
 
   @include for-mobile {
     flex-direction: column;
 
-    input {
+    &__input {
       padding: 15px 27px;
       margin-bottom: 24px;
     }
 
-    button {
+    &__btn {
       position: static;
       top: 0;
 

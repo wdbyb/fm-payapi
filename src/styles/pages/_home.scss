@@ -3,36 +3,114 @@ body {
   color: $secondary-color-dark-blue;
 }
 
-.intro {
+.section {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 75px;
+  justify-content: space-between;
+  gap: 30px;
 
-  padding: 75px 40px;
+  padding: 0 40px;
 
-  p {
+  &__title {
+    margin-bottom: $margin-medium;
+  }
+
+  &__desc {
+    margin-bottom: $margin-big;
+  }
+
+  &__col {
+    &--medium {
+      max-width: 445px;
+    }
+
+    &--centered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--intro {
+    .section__col {
+      max-width: 546px;
+      flex-grow: 1;
+    }
+  }
+
+  &--partners {
+    padding: 60px 40px;
+  }
+
+  &--intro {
+    gap: 75px;
+
+    padding: 75px 40px;
+  }
+
+  &--contact {
+    padding: 96px 40px;
+  }
+
+  @include for-tablet {
+    flex-direction: column;
+
+    padding: 40px;
+
+    &__col {
+      max-width: 573px;
+
+      text-align: center;
+
+      &.up {
+        order: -1;
+      }
+    }
+
+    &--intro {
+      gap: 48px;
+
+      .section__col {
+        max-width: 573px;
+      }
+    }
+
+    &--partners {
+      gap: 56px;
+
+      .section__col {
+        max-width: 456px;
+      }
+    }
+
+    &--contact {
+      gap: 16px;
+    }
+  }
+
+  @include for-mobile {
+    padding: 40px 24px;
+
+    &__col {
+      width: 100%;
+    }
+
+    &--contact {
+      gap: 40px;
+    }
+  }
+}
+
+.intro {
+  &__desc {
     margin-left: 27px;
     margin-top: $margin-small;
 
     color: $secondary-color-light-blue;
   }
 
-  a {
-    font-weight: 700;
-  }
-
-  h1 {
+  &__title {
     margin-bottom: 60px;
-  }
-
-  &__col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-
-    max-width: 50%;
   }
 
   &__image {
@@ -46,24 +124,14 @@ body {
   }
 
   @include for-tablet {
-    flex-direction: column;
-
-    h1 {
+    &__title {
       text-align: center;
     }
 
-    &__col {
-      max-width: 75%;
-
-      &:nth-of-type(1) {
-        order: 2;
-      }
-
-      p {
-        margin: 0;
-        margin-top: $margin-small;
-        text-align: center;
-      }
+    &__desc {
+      margin: 0;
+      margin-top: $margin-small;
+      text-align: center;
     }
 
     &__image {
@@ -73,10 +141,6 @@ body {
   }
 
   @include for-mobile {
-    &__col {
-      max-width: 500px;
-    }
-
     &__image {
       width: 128px;
       height: 240px;
@@ -85,126 +149,17 @@ body {
 }
 
 .partners {
-  padding: 60px 0;
-
   background: $secondary-color-darker-blue;
   color: $primary-color-white;
 
-  p {
+  &__title {
+    margin-bottom: $margin-medium;
+  }
+
+  &__desc {
+    margin-bottom: $margin-big;
+
     color: rgba($primary-color-white, 0.7);
-  }
-
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-  }
-
-  &__info {
-    max-width: 445px;
-    flex-shrink: 5;
-
-    h2 {
-      margin-bottom: $margin-medium;
-    }
-
-    p {
-      margin-bottom: $margin-big;
-    }
-  }
-
-  &__logos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px 12%;
-    flex-shrink: 3;
-
-    width: 100%;
-    max-width: 536px;
-  }
-
-  &__logo {
-    min-height: min-content;
-  }
-
-  @include for-tablet {
-    &__wrapper {
-      flex-direction: column;
-      gap: 56px;
-    }
-
-    &__logos {
-      order: -1;
-    }
-
-    &__logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &__info {
-      max-width: 456px;
-
-      text-align: center;
-
-      button {
-        margin: auto;
-      }
-    }
-  }
-
-  @include for-mobile {
-    &__logos {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-}
-
-.section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-
-  padding: 0 40px;
-
-  &__info {
-    max-width: 445px;
-    flex-shrink: 0;
-
-    h2 {
-      margin-bottom: $margin-medium;
-    }
-
-    p {
-      margin-bottom: $margin-big;
-    }
-  }
-
-  @include for-tablet {
-    flex-direction: column;
-
-    padding: 0 100px;
-
-    &__image {
-      order: -1;
-    }
-
-    &__info {
-      max-width: 573px;
-
-      text-align: center;
-    }
-  }
-
-  @include for-mobile {
-    padding: 0 24px;
-
-    &__info {
-      width: 100%;
-    }
   }
 }
 
@@ -242,16 +197,14 @@ body {
   }
 
   @include for-mobile {
+    padding: 40px 24px;
+
     &__list {
       grid-template-columns: 1fr;
+      gap: 48px;
 
       max-width: 536px;
       margin: auto;
     }
   }
-}
-
-.contact {
-  padding-top: 96px;
-  padding-bottom: 96px;
 }

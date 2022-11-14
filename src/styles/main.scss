@@ -9,6 +9,7 @@
 @import './base/reset';
 @import './base/typography';
 @import './base/utilities';
+@import './base/base';
 
 // 4. Layout-related sections
 @import './layout/container';
@@ -23,8 +24,11 @@
 @import './components/menu-toggler';
 @import './components/form';
 @import './components/socials';
+@import './components/partners-list';
+@import './components/pricing-plan';
 
 // 6. Page-specific styles
 @import './pages/home';
+@import './pages/pricing';
 
 // 7. Themes

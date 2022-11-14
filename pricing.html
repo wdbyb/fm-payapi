@@ -17,7 +17,7 @@
 <body>
   <div id="app">
     <header class="header container">
-      <a class="logo">
+      <a href="/" class="logo">
         <svg width="135" height="38" xmlns="http://www.w3.org/2000/svg">
           <g fill="currentColor" fill-rule="evenodd">
             <path
@@ -43,9 +43,9 @@
       <div class="menu">
         <nav class="nav nav--font-dark nav--in-menu">
           <ul class="nav__list">
-            <li><a class="nav__link" href="pricing.html">Pricing</a></li>
-            <li><a class="nav__link" href="#">About</a></li>
-            <li><a class="nav__link" href="#">Contact</a></li>
+            <li><a class="nav__link">Pricing</a></li>
+            <li><a class="nav__link" href="about.html">About</a></li>
+            <li><a class="nav__link" href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <button class="button button--primary" type="button">
@@ -53,134 +53,56 @@
         </button>
       </div>
     </header>
-    <main>
-      <section class="intro container section section--intro">
-        <div class="section__col">
-          <div>
-            <h1 class="intro__title heading-h1-large">
-              Start building with our APIs for absolutely free.
-            </h1>
-            <form class="form" action="POST">
-              <label class="form__label" for="">Email</label>
-              <input class="form__input" type="text" placeholder="Enter email address" />
-              <button class="form__btn button button--primary">Schedule a Demo</button>
-            </form>
-            <p class="intro__desc">Have any questions? <a class="form__link" href="#">Contact Us</a></p>
-          </div>
-        </div>
-        <div class="section__col section__col--centered up">
-          <div class="intro__image">
-            <img src="./src/assets/home/desktop/illustration-phone-mockup.svg" alt="Phone" />
-          </div>
-        </div>
-      </section>
-      <section class="partners">
-        <div class="container section section--partners">
-          <div class="section__col section__col--medium">
-            <h2 class="heading-h2 partners__title">Who we work with</h2>
-            <p class="partners__desc">
-              Today, millions of people around the world have successfully
-              connected their accounts to apps they love using our API. We
-              provide developers with the tools they need to create easy and
-              accessible experiences for their users.
-            </p>
-            <button class="button button--secondary-light">About Us</button>
-          </div>
-          <ul class="section__col up partners-list">
-            <li class="partners-list__logo">
-              <a href="#">
-                <img src="./src/assets/shared/desktop/tesla.svg" alt="Tesla logo" />
-              </a>
-            </li>
-            <li class="partners-list__logo">
-              <a href="#">
-                <img src="./src/assets/shared/desktop/microsoft.svg" alt="Tesla logo" />
-              </a>
-            </li>
-            <li class="partners-list__logo">
-              <a href="#">
-                <img src="./src/assets/shared/desktop/hewlett-packard.svg" alt="Tesla logo" />
-              </a>
-            </li>
-            <li class="partners-list__logo">
-              <a href="#">
-                <img src="./src/assets/shared/desktop/oracle.svg" alt="Tesla logo" />
-              </a>
-            </li>
-            <li class="partners-list__logo">
-              <a href="#">
-                <img src="./src/assets/shared/desktop/google.svg" alt="Tesla logo" />
-              </a>
-            </li>
-            <li class="partners-list__logo">
-              <a href="#">
-                <img src="./src/assets/shared/desktop/nvidia.svg" alt="Tesla logo" />
-              </a>
-            </li>
+    <main class="pricing">
+      <div class="container container--pricing-title">
+        <h1 class="heading-h1-small">Pricing</h1>
+      </div>
+      <section class="plans container">
+        <article class="pricing-plan">
+          <h3 class="heading-h3-big clr-primary-pink">Free Plan</h3>
+          <p class="pricing-plan__desc">Build and test using our core set of products with up to 100 API requests</p>
+          <p class="heading-h1-small">$0.00</p>
+          <ul class="pricing-plan__features">
+            <li class="pricing-plan__feature">Transactions</li>
+            <li class="pricing-plan__feature">Auth</li>
+            <li class="pricing-plan__feature">Identity</li>
+            <li class="pricing-plan__feature pricing-plan__feature--disabled">Investments</li>
+            <li class="pricing-plan__feature pricing-plan__feature--disabled">Assets</li>
+            <li class="pricing-plan__feature pricing-plan__feature--disabled">Liabilities</li>
+            <li class="pricing-plan__feature pricing-plan__feature--disabled">Income</li>
           </ul>
-        </div>
-      </section>
-      <section class="section container">
-        <div class="section__col up">
-          <img src="./src/assets/home/desktop/illustration-easy-to-implement.svg" alt="" />
-        </div>
-        <div class="section__col section__col--medium">
-          <h2 class="section__title heading-h2">Easy to implement</h2>
-          <p class="section__desc">
-            Our API comes with just a few lines of code. You’ll be up and
-            running in no time. We built our documentation page to integrate
-            payments functionality with ease.
-          </p>
-        </div>
-      </section>
-      <section class="section container">
-        <div class="section__col section__col--medium">
-          <h2 class="section__title heading-h2">Simple UI & UX</h2>
-          <p class="section__desc">
-            Our pre-built form is easy to integrate in your app or website’s
-            checkout flow and designed to optimize conversion.
-          </p>
-        </div>
-        <div class="section__col up">
-          <img src="./src/assets/home/desktop/illustration-simple-ui.svg" alt="" />
-        </div>
-      </section>
-      <section class="advantages container">
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <div class="advantages__icon">
-              <img src="./src/assets/home/desktop/icon-personal-finances.svg" alt="" />
-            </div>
-            <h3 class="heading-h3-small advantages__title">Personal Finances</h3>
-            <p>
-              Consolidate financial data from multiple sources and categorize
-              transactions up to 2 years of history. Analyze reports to
-              reconcile activities in your account.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__icon">
-              <img src="./src/assets/home/desktop/icon-banking-and-coverage.svg" alt="" />
-            </div>
-            <h3 class="heading-h3-small advantages__title">Banking & Coverage</h3>
-            <p>
-              With our platform, you can speed up account onboarding and
-              support ongoing payments for checking, savings, credit card, and
-              brokerage accounts.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__icon">
-              <img src="./src/assets/home/desktop/icon-consumer-payments.svg" alt="" />
-            </div>
-            <h3 class="heading-h3-small advantages__title">Consumer Payments</h3>
-            <p>
-              It’s easier to set up secure bank payments with us through a
-              flow designed with the user experience in mind. Customers could
-              instantly authenticate their account.
-            </p>
-          </li>
-        </ul>
+          <button class="button button--secondary-dark">Request Access</button>
+        </article>
+        <article class="pricing-plan">
+          <h3 class="heading-h3-big clr-primary-pink">Basic Plan</h3>
+          <p class="pricing-plan__desc">Launch your project with unlimited requests and no contractual minimums</p>
+          <p class="heading-h1-small">$249.00</p>
+          <ul class="pricing-plan__features">
+            <li class="pricing-plan__feature">Transactions</li>
+            <li class="pricing-plan__feature">Auth</li>
+            <li class="pricing-plan__feature">Identity</li>
+            <li class="pricing-plan__feature">Investments</li>
+            <li class="pricing-plan__feature">Assets</li>
+            <li class="pricing-plan__feature pricing-plan__feature--disabled">Liabilities</li>
+            <li class="pricing-plan__feature pricing-plan__feature--disabled">Income</li>
+          </ul>
+          <button class="button button--secondary-dark">Request Access</button>
+        </article>
+        <article class="pricing-plan">
+          <h3 class="heading-h3-big clr-primary-pink">Premium Plan</h3>
+          <p class="pricing-plan__desc">Get tailored solutions, volume pricing, and dedicated support for your team</p>
+          <p class="heading-h1-small">$499.00</p>
+          <ul class="pricing-plan__features">
+            <li class="pricing-plan__feature">Transactions</li>
+            <li class="pricing-plan__feature">Auth</li>
+            <li class="pricing-plan__feature">Identity</li>
+            <li class="pricing-plan__feature">Investments</li>
+            <li class="pricing-plan__feature">Assets</li>
+            <li class="pricing-plan__feature">Liabilities</li>
+            <li class="pricing-plan__feature">Income</li>
+          </ul>
+          <button class="button button--secondary-dark">Request Access</button>
+        </article>
       </section>
       <section class="section section--contact container">
         <div class="section__col up">
@@ -219,7 +141,7 @@
         </a>
         <nav class="nav nav--font-light">
           <ul class="nav__list">
-            <li><a class="nav__link" href="pricing.html">Pricing</a></li>
+            <li><a class="nav__link" href="#">Pricing</a></li>
             <li><a class="nav__link" href="#">About</a></li>
             <li><a class="nav__link" href="#">Contact</a></li>
           </ul>
