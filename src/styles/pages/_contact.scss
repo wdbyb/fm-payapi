@@ -1,0 +1,14 @@
+.contact {
+  &__title {
+    max-width: 730px;
+  }
+
+  @include for-tablet {
+    &__title {
+      max-width: 545px;
+      margin: auto;
+
+      text-align: center;
+    }
+  }
+}

@@ -4,6 +4,14 @@
   padding: 40px;
   margin: auto;
 
+  &--short {
+    max-width: 1000px;
+  }
+
+  &--about-title {
+    padding: 82px 40px 24px;
+  }
+
   &--pricing-title {
     padding: 82px 40px 72px;
   }
@@ -11,6 +19,10 @@
   @include for-tablet {
     &--pricing-title {
       padding: 75px 40px 70px;
+    }
+
+    &--about-title {
+      padding: 75px 40px 24px;
     }
   }
 

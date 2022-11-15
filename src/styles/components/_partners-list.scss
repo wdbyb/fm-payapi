@@ -1,20 +1,45 @@
 .partners-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px 12%;
+  display: flex;
+  flex-direction: column;
   flex-shrink: 3;
 
   width: 100%;
   max-width: 536px;
 
+  &__title {
+    max-width: 445px;
+    margin-bottom: $margin-large;
+
+    color: rgba($secondary-color-dark-blue, 0.75);
+  }
+
+  &__logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
   &__logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: min-content;
+
+    svg {
+      width: fit-content;
+      // height: 100%;
+    }
+  }
+
+  @include for-tablet {
+    &__title {
+      margin: auto;
+      margin-bottom: $margin-large;
+    }
   }
 
   @include for-mobile {
-    grid-template-columns: repeat(2, 1fr);
+    &__logos {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }

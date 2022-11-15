@@ -1,0 +1,40 @@
+.table {
+  display: flex;
+
+  tbody {
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+  }
+
+  &__row {
+    display: grid;
+    flex-grow: 1;
+
+    padding: 16px 0;
+
+    border-top: 1px solid rgba($secondary-color-dark-blue, 0.25);
+    border-bottom: 1px solid rgba($secondary-color-dark-blue, 0.25);
+  }
+
+  &__cell {
+    font-size: 56px;
+    line-height: 72px;
+  }
+
+  @include for-mobile {
+    tbody {
+      flex-direction: column;
+      gap: 0;
+
+      border-top: 1px solid rgba($secondary-color-dark-blue, 0.25);
+      border-bottom: 1px solid rgba($secondary-color-dark-blue, 0.25);
+
+      text-align: center;
+    }
+
+    &__row {
+      border: 0;
+    }
+  }
+}

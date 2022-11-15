@@ -53,7 +53,14 @@
     }
   }
 
-  @include for-mobile {
+  &--submit {
     width: 100%;
+    max-width: 152px;
+  }
+
+  @include for-mobile {
+    &--primary {
+      width: 100%;
+    }
   }
 }
