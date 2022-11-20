@@ -1,4 +1,8 @@
 .pricing {
+  &__title {
+    position: relative;
+  }
+
   @include for-tablet {
     text-align: center;
   }

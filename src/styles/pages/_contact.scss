@@ -1,4 +1,8 @@
 .contact {
+  &__title-wrapper {
+    position: relative;
+  }
+
   &__title {
     max-width: 730px;
   }

@@ -1,4 +1,5 @@
 body {
+  display: flex;
   background-color: $bg-primary-color;
   color: $secondary-color-dark-blue;
 }
@@ -8,6 +9,8 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+
+  position: relative;
 
   padding: 0 40px;
 
@@ -146,7 +149,118 @@ body {
   }
 }
 
+.bg-circle {
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+
+    width: 780px;
+    height: 780px;
+
+    background: rgba($secondary-color-dark-blue, 0.15);
+    border-radius: 100%;
+
+    z-index: -1;
+  }
+
+  &--secondary {
+    &::before {
+      top: -525px;
+      left: calc(50% + 100px);
+    }
+  }
+
+  &--header {
+    &::before {
+      display: none;
+    }
+  }
+
+  &--primary {
+    &::before {
+      top: -150px;
+      left: calc(50% + 100px);
+    }
+  }
+
+  &--footer {
+    &::before {
+      top: -150px;
+      left: calc(50% + 320px);
+
+      z-index: 0;
+    }
+  }
+
+  &--partners {
+    &::before {
+      bottom: 50px;
+      left: calc(50% - 940px);
+
+      z-index: 0;
+    }
+  }
+
+  @include for-tablet {
+    &--primary {
+      &::before {
+        top: -50%;
+        left: calc(50% - 390px);
+      }
+    }
+
+    &--partners {
+      &::before {
+        top: -100%;
+        left: calc(50% - 390px);
+      }
+    }
+
+    &--footer {
+      &::before {
+        left: 50%;
+      }
+    }
+  }
+
+  @include for-mobile {
+    &--primary {
+      &::before {
+        top: -65%;
+      }
+    }
+
+    &--secondary {
+      &::before {
+        top: -640px;
+        left: calc(50% - 130px);
+      }
+    }
+
+    &--header {
+      &::before {
+        display: block;
+        top: -505px;
+      }
+    }
+
+    &--footer {
+      &::before {
+        top: 50%;
+        left: calc(50% - 390px);
+      }
+    }
+  }
+}
+
 .intro {
+  position: relative;
+  padding-top: 100px;
+
+  // overflow: hidden;
+
   &__desc {
     margin-left: 27px;
     margin-top: $margin-small;
@@ -194,6 +308,8 @@ body {
 }
 
 .partners {
+  position: relative;
+
   background: $secondary-color-darker-blue;
   color: $primary-color-white;
 
