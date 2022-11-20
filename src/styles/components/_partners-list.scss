@@ -31,6 +31,10 @@
   }
 
   @include for-tablet {
+    &.section__col {
+      max-width: 560px;
+    }
+
     &__title {
       margin: auto;
       margin-bottom: $margin-large;

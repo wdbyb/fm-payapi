@@ -28,6 +28,10 @@
     &--about-title {
       padding: 175px 40px 24px;
     }
+
+    &--footer {
+      padding: 30px 40px;
+    }
   }
 
   @include for-mobile {

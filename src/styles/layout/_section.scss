@@ -1,0 +1,176 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  position: relative;
+
+  padding: 70px 40px;
+
+  &__title {
+    margin-bottom: $margin-medium;
+  }
+
+  &__desc {
+    margin-bottom: $margin-big;
+  }
+
+  &__col {
+    &--medium {
+      max-width: 445px;
+    }
+
+    &--centered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--header {
+      max-width: 255px;
+    }
+
+    &--body {
+      max-width: 635px;
+    }
+  }
+
+  &--pd-top-md {
+    padding-top: 150px;
+  }
+
+  &--about {
+    align-items: flex-start;
+    padding: 28px 40px;
+  }
+
+  &--intro {
+    gap: 75px;
+
+    padding: 160px 40px 75px;
+
+    .section__col {
+      max-width: 546px;
+      flex-grow: 1;
+    }
+  }
+
+  &--partners {
+    padding: 100px 40px;
+  }
+
+  &--contact {
+    padding: 30px 40px 90px;
+  }
+
+  @include for-tablet {
+    flex-direction: column;
+    gap: 40px;
+
+    padding: 40px;
+
+    &__desc {
+      margin: 0;
+    }
+
+    &__col {
+      max-width: 573px;
+
+      text-align: center;
+
+      &.up {
+        order: -1;
+      }
+
+      &--image {
+        width: 100%;
+        max-width: 391px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &--header {
+        max-width: 223px;
+      }
+
+      &--body {
+        max-width: 456px;
+      }
+    }
+
+    &--pd-top-md {
+      padding-top: 100px;
+    }
+
+    &--form-request {
+      .section__col--medium {
+        max-width: 445px;
+      }
+    }
+
+    &--about {
+      flex-direction: row;
+      gap: 10px;
+
+      .section__col {
+        text-align: start;
+      }
+    }
+
+    &--intro {
+      gap: 48px;
+
+      padding: 135px 40px 90px;
+
+      .section__col {
+        max-width: 573px;
+      }
+    }
+
+    &--partners {
+      gap: 56px;
+
+      padding: 90px 40px;
+
+      .section__col {
+        max-width: 456px;
+      }
+    }
+
+    &--contact {
+      padding: 45px 40px 100px;
+    }
+  }
+
+  @include for-mobile {
+    padding: 40px 24px;
+
+    &__col {
+      width: 100%;
+    }
+
+    &--intro {
+      padding: 110px 24px 75px;
+    }
+
+    &--partners {
+      padding: 80px 40px;
+    }
+
+    &--about {
+      flex-direction: column;
+      align-items: center;
+
+      .section__col {
+        text-align: center;
+      }
+    }
+
+    &--contact {
+      gap: 40px;
+    }
+  }
+}
