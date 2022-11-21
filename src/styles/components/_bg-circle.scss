@@ -28,15 +28,15 @@
     overflow: initial;
 
     &::before {
-      top: calc(50% - 390px);
-      left: -540px;
+      top: calc(50% - 350px);
+      left: -520px;
     }
   }
 
   &--secondary {
     &::before {
       top: -525px;
-      left: calc(50% + 100px);
+      left: calc(50% + 80px);
     }
   }
 
@@ -88,6 +88,13 @@
       }
     }
 
+    &--secondary {
+      &::before {
+        top: -465px;
+        left: calc(50% + 120px);
+      }
+    }
+
     &--partners {
       &::before {
         top: -100%;
@@ -105,7 +112,7 @@
   @include for-mobile {
     &--primary {
       &::before {
-        top: -65%;
+        top: -100%;
       }
     }
 
@@ -119,7 +126,7 @@
     &--header {
       &::before {
         display: block;
-        top: -505px;
+        top: -720px;
       }
     }
 

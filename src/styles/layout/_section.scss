@@ -45,6 +45,14 @@
     padding: 28px 40px;
   }
 
+  &--about-last-child {
+    margin-bottom: 50px;
+  }
+
+  &--form-request {
+    padding: 30px 40px 60px;
+  }
+
   &--intro {
     gap: 75px;
 
@@ -106,6 +114,8 @@
     }
 
     &--form-request {
+      gap: 60px;
+
       .section__col--medium {
         max-width: 445px;
       }
@@ -115,9 +125,15 @@
       flex-direction: row;
       gap: 10px;
 
+      padding: 30px 40px;
+
       .section__col {
         text-align: start;
       }
+    }
+
+    &--about-last-child {
+      margin-bottom: 0;
     }
 
     &--intro {
@@ -152,6 +168,12 @@
       width: 100%;
     }
 
+    &--form-request {
+      gap: 80px;
+
+      padding: 24px;
+    }
+
     &--intro {
       padding: 110px 24px 75px;
     }
@@ -163,6 +185,8 @@
     &--about {
       flex-direction: column;
       align-items: center;
+
+      padding: 24px;
 
       .section__col {
         text-align: center;

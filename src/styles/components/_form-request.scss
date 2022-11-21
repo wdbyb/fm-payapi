@@ -8,7 +8,7 @@
     position: relative;
 
     padding: 0;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   &__input {
@@ -72,5 +72,9 @@
 
   &__checkbox-label {
     padding-left: 50px;
+  }
+
+  @include for-tablet {
+    text-align: start;
   }
 }

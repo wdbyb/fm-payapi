@@ -15,7 +15,7 @@
 }
 
 .company {
-  margin-top: 50px;
+  margin-top: 75px;
 
   &__picture {
     width: 100%;
@@ -28,12 +28,12 @@
   }
 
   @include for-tablet {
-    margin-top: 0;
+    margin-top: 60px;
   }
 
   @include for-mobile {
     &__picture {
-      aspect-ratio: 1.5 / 1;
+      aspect-ratio: 1.25 / 1;
     }
   }
 }

@@ -9,24 +9,28 @@
   }
 
   &--contact-title {
-    padding: 182px 40px 24px;
+    padding: 170px 40px 24px;
   }
 
   &--about-title {
-    padding: 182px 40px 24px;
+    padding: 172px 40px 40px;
   }
 
   &--pricing-title {
-    padding: 182px 40px 72px;
+    padding: 170px 40px 40px;
   }
 
   @include for-tablet {
+    &--contact-title {
+      padding: 164px 40px 16px;
+    }
+
     &--pricing-title {
-      padding: 175px 40px 70px;
+      padding: 164px 40px 30px;
     }
 
     &--about-title {
-      padding: 175px 40px 24px;
+      padding: 163px 40px 40px;
     }
 
     &--footer {
@@ -38,11 +42,11 @@
     padding: 40px 24px;
 
     &--about-title {
-      padding: 126px 40px 24px;
+      padding: 126px 24px 24px;
     }
 
     &--contact-title {
-      padding: 126px 48px 24px;
+      padding: 126px 24px 16px;
     }
 
     &--pricing-title {
