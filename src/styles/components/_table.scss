@@ -16,6 +16,8 @@
 
     border-top: 1px solid rgba($secondary-color-dark-blue, 0.25);
     border-bottom: 1px solid rgba($secondary-color-dark-blue, 0.25);
+
+    text-align: left;
   }
 
   &__cell {
@@ -31,14 +33,14 @@
 
       border-top: 1px solid rgba($secondary-color-dark-blue, 0.25);
       border-bottom: 1px solid rgba($secondary-color-dark-blue, 0.25);
-
-      text-align: center;
     }
 
     &__row {
       max-width: 100%;
       padding: 16px 0;
       border: 0;
+
+      text-align: center;
     }
   }
 }

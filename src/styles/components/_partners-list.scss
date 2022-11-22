@@ -23,11 +23,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    svg {
-      width: fit-content;
-      // height: 100%;
-    }
   }
 
   @include for-tablet {
