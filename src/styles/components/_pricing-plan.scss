@@ -5,22 +5,22 @@
   max-width: 350px;
 
   &__desc {
-    margin: 16px 0 8px;
+    margin: $margin-small 0 $margin-smaller;
 
     color: $secondary-color-light-blue;
 
     @include for-tablet {
-      margin: 16px 0 30px;
+      margin: $margin-small 0 30px;
     }
 
     @include for-mobile {
-      margin: 16px 0 20px;
+      margin: $margin-small 0 20px;
     }
   }
 
   &__features {
     padding: 34px 0 14px;
-    margin: 24px 0;
+    margin: $margin-medium 0;
 
     text-align: start;
 
@@ -40,7 +40,7 @@
     width: 100%;
     max-width: 150px;
     padding-left: 36px;
-    margin-bottom: 8px;
+    margin-bottom: $margin-smaller;
 
     &::before {
       content: '';

@@ -46,7 +46,7 @@
           <ul class="nav__list">
             <li><a class="nav__link" href="pricing.html">Pricing</a></li>
             <li><a class="nav__link" href="about.html">About</a></li>
-            <li><a class="nav__link">Contact</a></li>
+            <li><a class="nav__link" href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <button class="button button--primary" type="button">
@@ -62,36 +62,38 @@
         </div>
       </div>
       <section class="section section--form-request container">
+        <h2 class="visually-hidden">PayAPI Submit Form</h2>
         <form class="form-request section__col up section__col--medium" action="">
           <fieldset class="form-request__fieldset">
-            <label class="visually-hidden" for="">Name</label>
-            <input class="form-request__input" type="text" placeholder="Name" required>
+            <label class="visually-hidden" for="contact-name">Name</label>
+            <input class="form-request__input" id="contact-name" type="text" placeholder="Name" required>
             <p class="form-request__error">This field can’t be empty</p>
           </fieldset>
           <fieldset class="form-request__fieldset">
-            <label class="visually-hidden" for="">Email Address</label>
-            <input class="form-request__input" type="text" placeholder="Email Address">
+            <label class="visually-hidden" for="contact-email">Email Address</label>
+            <input class="form-request__input" id="contact-email" type="text" placeholder="Email Address">
             <p class="form-request__error">This field can’t be empty</p>
           </fieldset>
           <fieldset class="form-request__fieldset">
-            <label class="visually-hidden" for="">Company Name</label>
-            <input class="form-request__input" type="text" placeholder="Company Name">
+            <label class="visually-hidden" for="contact-co-name">Company Name</label>
+            <input class="form-request__input" id="contact-co-name" type="text" placeholder="Company Name">
             <p class="form-request__error">This field can’t be empty</p>
           </fieldset>
           <fieldset class="form-request__fieldset">
-            <label class="visually-hidden" for="">Title</label>
-            <input class="form-request__input" type="text" placeholder="Title">
+            <label class="visually-hidden" for="contact-title">Title</label>
+            <input class="form-request__input" id="contact-title" type="text" placeholder="Title">
             <p class="form-request__error">This field can’t be empty</p>
           </fieldset>
           <fieldset class="form-request__fieldset">
-            <label class="visually-hidden" for="">Message</label>
-            <textarea class="form-request__input" rows="4" placeholder="Message"></textarea>
+            <label class="visually-hidden" for="contact-message">Message</label>
+            <textarea class="form-request__input" id="contact-message" rows="4" placeholder="Message"></textarea>
             <p class="form-request__error">This field can’t be empty</p>
           </fieldset>
           <fieldset class="form-request__fieldset">
-            <label class="form-request__checkbox-label" for="">Stay up-to-date with company announcements and updates to
+            <label class="form-request__checkbox-label" for="contact-subscription">Stay up-to-date with company
+              announcements and updates to
               our API</label>
-            <input class="form-request__checkbox" type="checkbox">
+            <input class="form-request__checkbox" id="contact-subscription" type="checkbox">
           </fieldset>
           <button class="button button--submit button--secondary-dark" type="submit">Submit</button>
         </form>
