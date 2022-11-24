@@ -6,15 +6,16 @@ body {
 
 .intro {
   position: relative;
-  // padding-top: 100px;
-
-  // overflow: hidden;
 
   &__desc {
     margin-left: 27px;
     margin-top: $margin-small;
 
     color: $secondary-color-light-blue;
+  }
+
+  &__link {
+    font-weight: 700;
   }
 
   &__title {
