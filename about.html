@@ -78,10 +78,18 @@
         <h2 class="visually-hidden">Company Statistics</h2>
         <div class="company__picture">
           <picture>
-            <source media="(max-width: 767px)"
+            <source media="(max-width: 767px)" type="image/webp"
+              srcset="./src/assets/about/mobile/image-team-members.webp 375w, ./src/assets/about/mobile/image-team-members@2x.webp 750w">
+            <source media="(max-width: 1023px)" type="image/webp"
+              srcset="./src/assets/about/tablet/image-team-members.webp 768w, ./src/assets/about/tablet/image-team-members@2x.webp 1536w">
+            <source type="image/webp"
+              srcset="./src/assets/about/desktop/image-team-members.webp 1440w, ./src/assets/about/desktop/image-team-members@2x.webp 2880w">
+            <source media="(max-width: 767px)" type="image/jpeg"
               srcset="./src/assets/about/mobile/image-team-members.jpg 375w, ./src/assets/about/mobile/image-team-members@2x.jpg 750w">
-            <source media="(max-width: 1023px)" srcset="./src/assets/about/tablet/image-team-members.jpg 768w">
-            <img width="1440" height="500" src="./src/assets/about/desktop/image-team-members.jpg" alt="Team members">
+            <source media="(max-width: 1023px)" type="image/jpeg"
+              srcset="./src/assets/about/tablet/image-team-members.jpg 768w, ./src/assets/about/tablet/image-team-members@2x.jpg 1536w">
+            <img width="1440" height="500" src="./src/assets/about/desktop/image-team-members.jpg"
+              srcset="./src/assets/about/desktop/image-team-members@2x.jpg 2x" alt="Team members">
           </picture>
         </div>
         <article class="container">
