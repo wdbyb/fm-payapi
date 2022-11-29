@@ -62,9 +62,9 @@
               <h1 class="intro__title heading-h1-large">
                 Start building with our APIs for absolutely free.
               </h1>
-              <form class="form" action="POST" id="intro-form">
-                <label class="form__label" for="intro-form-input">Email</label>
-                <input class="form__input" id="intro-form-input" type="text" placeholder="Enter email address" />
+              <form class="form" action="/" method="POST" id="intro-form" autocomplete="off">
+                <label class="form__label" for="intro-email">Email</label>
+                <input class="form__input" id="intro-email" type="email" required placeholder="Enter email address" />
                 <button class="form__btn button button--primary" type="submit">Schedule a Demo</button>
               </form>
               <p class="intro__desc">Have any questions? <a class="intro__link" href="#">Contact Us</a></p>
@@ -211,9 +211,9 @@
         <div class="section__col up">
           <h2 class="heading-h2">Ready to start?</h2>
         </div>
-        <form class="section__col form" action="POST" id="contact-form">
-          <label class="form__label" for="contact-form-input">Email</label>
-          <input class="form__input" id="contact-form-input" type="text" placeholder="Enter email address" />
+        <form class="section__col form" action="/" method="POST" id="schedule-form" autocomplete="off">
+          <label class="form__label" for="schedule-email">Email</label>
+          <input class="form__input" id="schedule-email" type="email" required placeholder="Enter email address" />
           <button class="form__btn button button--primary">Schedule a Demo</button>
         </form>
       </section>

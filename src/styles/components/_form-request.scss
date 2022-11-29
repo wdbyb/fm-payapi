@@ -9,6 +9,12 @@
 
     padding: 0;
     margin-bottom: $margin-small;
+
+    &.error {
+      & > .form-request__error {
+        display: block;
+      }
+    }
   }
 
   &__input {
@@ -30,12 +36,6 @@
     &:hover {
       border-bottom: 1px solid $secondary-color-dark-blue;
     }
-
-    // &:invalid {
-    //   & + .form-request__error {
-    //     display: block;
-    //   }
-    // }
   }
 
   &__error {

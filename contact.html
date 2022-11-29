@@ -63,37 +63,36 @@
       </div>
       <section class="section section--form-request container">
         <h2 class="visually-hidden">PayAPI Submit Form</h2>
-        <form class="form-request section__col up section__col--medium" action="">
+        <form class="form-request section__col up section__col--medium" action="/" method="POST" id="request-form"
+          autocomplete="off">
           <fieldset class="form-request__fieldset">
-            <label class="visually-hidden" for="contact-name">Name</label>
-            <input class="form-request__input" id="contact-name" type="text" placeholder="Name" required>
-            <p class="form-request__error">This field can’t be empty</p>
+            <label class="visually-hidden" for="request-name">Name</label>
+            <input class="form-request__input" id="request-name" type="text" placeholder="Name">
+            <p class="form-request__error"></p>
           </fieldset>
           <fieldset class="form-request__fieldset">
-            <label class="visually-hidden" for="contact-email">Email Address</label>
-            <input class="form-request__input" id="contact-email" type="text" placeholder="Email Address">
-            <p class="form-request__error">This field can’t be empty</p>
+            <label class="visually-hidden" for="request-email">Email Address</label>
+            <input class="form-request__input" id="request-email" type="email" placeholder="Email Address">
+            <p class="form-request__error"></p>
           </fieldset>
           <fieldset class="form-request__fieldset">
-            <label class="visually-hidden" for="contact-co-name">Company Name</label>
-            <input class="form-request__input" id="contact-co-name" type="text" placeholder="Company Name">
-            <p class="form-request__error">This field can’t be empty</p>
+            <label class="visually-hidden" for="request-co-name">Company Name</label>
+            <input class="form-request__input" id="request-co-name" type="text" placeholder="Company Name">
           </fieldset>
           <fieldset class="form-request__fieldset">
-            <label class="visually-hidden" for="contact-title">Title</label>
-            <input class="form-request__input" id="contact-title" type="text" placeholder="Title">
-            <p class="form-request__error">This field can’t be empty</p>
+            <label class="visually-hidden" for="request-title">Title</label>
+            <input class="form-request__input" id="request-title" type="text" placeholder="Title">
           </fieldset>
           <fieldset class="form-request__fieldset">
-            <label class="visually-hidden" for="contact-message">Message</label>
-            <textarea class="form-request__input" id="contact-message" rows="4" placeholder="Message"></textarea>
-            <p class="form-request__error">This field can’t be empty</p>
+            <label class="visually-hidden" for="request-message">Message</label>
+            <textarea class="form-request__input" id="request-message" rows="4" placeholder="Message"></textarea>
+            <p class="form-request__error"></p>
           </fieldset>
           <fieldset class="form-request__fieldset">
-            <label class="form-request__checkbox-label" for="contact-subscription">Stay up-to-date with company
+            <label class="form-request__checkbox-label" for="request-subscription">Stay up-to-date with company
               announcements and updates to
               our API</label>
-            <input class="form-request__checkbox" id="contact-subscription" type="checkbox">
+            <input class="form-request__checkbox" id="request-subscription" type="checkbox">
           </fieldset>
           <button class="button button--submit button--secondary-dark" type="submit">Submit</button>
         </form>
@@ -149,9 +148,9 @@
         <div class="section__col up">
           <h2 class="heading-h2">Ready to start?</h2>
         </div>
-        <form class="form section__col" action="POST">
-          <label class="form__label" for="">Email</label>
-          <input class="form__input" type="text" placeholder="Enter email address" />
+        <form class="form section__col" action="/" method="POST" id="schedule-form" autocomplete="off">
+          <label class="form__label" for="schedule-email">Email</label>
+          <input class="form__input" type="email" id="schedule-email" required placeholder="Enter email address" />
           <button class="form__btn button button--primary" type="submit">Schedule a Demo</button>
         </form>
       </section>
