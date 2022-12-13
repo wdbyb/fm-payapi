@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/wdbyb/fm-payapi)
-- Live Site URL: [Add live site URL here](https://fm-payapi.vercel.app/)
+- Solution URL: [Github](https://github.com/wdbyb/fm-payapi)
+- Live Site URL: [Vercel](https://fm-payapi.vercel.app/)
 
 ## My process
 
